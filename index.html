@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Project Data Flow - Gianna James and Shauna Lee</title>
+</head>
+
+<body>
+    <img src="Untitled drawing.png" alt="ourLogo">
+    <div class="webpage">
+        <div class="box">
+            <h1>4 Major Computer Components</h1>
+        </div>
+        <button class="instructions"> Instructions For Learning Use:</button>
+        <div class="colapse">
+            <p>To use this website to its full potental click through each subject and use the microwave to demonstrate how data flows through a computer</p>
+        </div>
+        <div class="microwaveSection">
+            <div class="microwaveContainer">
+                <div class="microwave">
+                    <div class="microBox">
+                        <div class="microDoor"></div>
+                        <button class="microHandle"></button>
+                    </div>
+                    <div class="keyboardWdisplay">
+                        <div class="textContainer">
+                            <div class="clockScreen">
+                                <p id="setTime"></p>
+                            </div>
+                        </div>
+                        <div class="keyboard">
+                            <div class="row one">
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML=1">1</button>
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=2">2</button>
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=3">3</button>
+                            </div>
+                            <div class="row two">
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=4">4</button>
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=5">5</button>
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=6">6</button>
+                            </div>
+                            <div class="row three">
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=7">7</button>
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=8">8</button>
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=9">9</button>
+                            </div>
+                            <div class="row four">
+                                <button class="number" onclick="document.getElementById('setTime').innerHTML+=0">0</button>
+                            </div>
+                            <div class="row five">
+                                <button class="clearButton" onclick="document.getElementById('setTime').innerHTML=0">Clear</button>
+                                <button class="startButton" onclick="">Start</button>
+                                <button class="cancelButton">Stop</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trapezoid"></div>
+            </div>
+        </div>
+        <div class="dataFlowChart">
+            <button popovertarget="inputBox">Input</button>
+            <div class="lineinbetween"></div>
+            <button popovertarget="cpuBox">CPU</button>
+            <div class="lineinbetween"></div>
+            <button popovertarget="memoryBox">Memory</button>
+            <div class="lineinbetween"></div>
+            <button popovertarget="outputBox">Output</button>
+        </div>
+        <div class="popoverDisplay">
+             <div popover id="inputBox">
+                <p>
+                    Explaining the input of a microwave: people press buttons and that
+                    is the input that we put into the microwave
+                </p>
+            </div>
+            <div popover id="cpuBox">
+                <p>
+                    This is the centeral processing unit or more commonly known as
+                </p>
+            </div>
+            <div popover id="memoryBox">
+                <p>
+                    This part is about the memory inside of a microwave
+                </p>
+            </div>
+            <div popover id="outputBox">
+                <p>
+                    Explaining how the output is what is displayed but also the
+                    function that results when the user presses start.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

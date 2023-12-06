@@ -1,0 +1,293 @@
+body {
+    background-color: #f5d0c6;
+}
+
+.webpage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.microwaveSection {
+    height: 400px;
+
+}
+
+.box {
+    position: relative;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -40%);
+    border-radius: 0.6rem;
+    width: 900px;
+    height: 120px;
+    background-color: #457554;
+    color: #f58261;
+    box-shadow: 0 4px 7px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: system-ui;
+    text-align: center;
+    font-size: 55px;
+}
+
+img {
+
+    padding: 0px;
+    width: 100px;
+    height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #f7f5c9;
+
+}
+
+.instructions {
+    text-align: center;
+    font-family: system-ui;
+    background-color: #f7f5c9;
+    color: #7c6ea0ff;
+}
+
+.colapse {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.microwaveContainer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.trapezoid {
+    position:absolute;
+    left:67.5%;
+    top:50%
+	width: 100px;
+	height: 293px;
+	transform: skew(-20deg);
+	background: #555;
+    rotate:-20deg;
+}
+
+.microwave {
+    display: flex;
+    align-items: center;
+    height: 39vh;
+    width: 77vh;
+    justify-content: left;
+    align-content: left;
+    background-color: gray;
+    border-radius: 0.3rem;
+    padding-top: 1vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textContainer {
+    height: 7vh;
+    width: 20vh;
+    background: rgb(0, 0, 0);
+    border-color: antiquewhite;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 0.0005vh;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.clockScreen {
+    height: 5.5vh;
+    width: 18vh;
+    background: greenyellow;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 0.0005vh;
+    border-radius: 0.1rem;
+    outline: none;
+    margin: auto;
+    margin-top: 0.5ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockScreen p {
+    font-size: 30px;
+}
+
+.microBox {
+    left: 50%;
+    top: 50%;
+    height: 38.3vh;
+    width: 55vh;
+    background: rgb(0, 0, 0);
+    border-color: antiquewhite;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 0.0005vh;
+    border-radius: 0.5rem;
+    outline: none;
+    display: flex;
+}
+
+.microDoor {
+
+    height: 35vh;
+    width: 47vh;
+    background-color: rgb(209, 208, 208);
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 0.0005vh;
+    border-radius: 0.1rem;
+    outline: none;
+    margin: inherit;
+    margin-top: 1.5ch;
+    margin-left: 1.5ch;
+
+}
+
+.microHandle {
+    height: 30vh;
+    width: 3vh;
+    border-style: solid;
+    border-width: 0.0005vh;
+    margin-left: 1.8ch;
+    margin-top: 5ch;
+    background-color: rgb(164, 162, 162);
+    border-radius: 0.5rem;
+
+}
+
+
+.keyboard {
+    padding-top: 1vh;
+    height: 30vh;
+    width: 20vh;
+    background: rgb(0, 0, 0);
+    border-radius: 1px;
+    border-color: antiquewhite;
+    border-style: solid;
+    border-width: 0.005vh;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 0.5vh;
+}
+
+.number {
+    font-size: 4.6vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.05vh;
+}
+
+.number:hover {
+    background: lightgray
+}
+
+.clearButton {
+    border-radius: 50%;
+}
+
+.startButton {
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 50%;
+}
+
+.startButton:hover {
+    background: lightgray;
+}
+
+.cancelButton {
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 50%;
+}
+
+.cancelButton:hover {
+    background: lightgray;
+}
+
+.keyboardWdisplay {
+    left: 73.8%;
+    top: 50%;
+}
+
+.dataFlowChart {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.dataFlowChart button {
+    background-color: #457554;
+    color: #f58261;
+    font: system-ui;
+    font-size: 35px;
+    height: 90px;
+    width: 150px;
+    padding-right: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lineinbetween {
+    border: solid;
+    height: 0px;
+    width: 75px;
+}
+
+.popoverDisplay div {
+    background-color: #f7f5c9;
+    color: #7c6ea0ff;
+    font-family: system-ui;
+    border-radius: 1rem;
+    height: 300px;
+    width: 300px;
+}
+
+#inputBox {
+    position: absolute;
+    top: 12%;
+    right: 60%;
+}
+
+#cpuBox {
+    position: absolute;
+    top: 12%;
+    right: 60%;
+
+}
+
+#memoryBox {
+    position: absolute;
+    top: 12%;
+    left: 60%;
+
+}
+
+#outputBox {
+    position: absolute;
+    top: 12%;
+    left: 60%;
+}
